@@ -9,16 +9,27 @@ import Foundation
 import UIKit
 
 class DogAPI {
-    enum EndPoint: String {
-        case randomImageFromAllDogsCollection = "https://dog.ceo/api/breeds/image/random"
-        
+    enum EndPoint {
+        case randomImageFromAllDogsCollection
+        case randomImageForBreed(String)
+        case listAllBreeds
         var url: URL {
-            return URL(string: self.rawValue)!
+            return URL(string: self.stringValue)!
+        }
+        var stringValue: String {
+            switch self {
+            case .randomImageFromAllDogsCollection:
+                return "https://dog.ceo/api/breeds/image/random"
+            case .randomImageForBreed(let breed):
+                return "https://dog.ceo/api/breed/\(breed)/images/random"
+            case .listAllBreeds:
+                return "https://dog.ceo/api/breeds/list/all"
+            }
         }
     }
     
-    class func requestRandomImage(completionHandler: @escaping (DogImage?, Error?) -> Void) {
-        let endpoint = DogAPI.EndPoint.randomImageFromAllDogsCollection
+    class func requestRandomImage(breed: String, completionHandler: @escaping (DogImage?, Error?) -> Void) {
+        let endpoint = DogAPI.EndPoint.randomImageForBreed(breed)
         let randomImageURL = endpoint.url
         let task = URLSession.shared.dataTask(with: randomImageURL, completionHandler: { (data, response, error) in
             guard let data = data else {
@@ -42,6 +53,22 @@ class DogAPI {
             let downloadedImage = UIImage(data: data)
             completionHandler(downloadedImage, nil)
         })
+        task.resume()
+    }
+    class func requestBreedsList(completionHandler: @escaping ([String], Error?) -> Void) {
+        let task = URLSession.shared.dataTask(with: EndPoint.listAllBreeds.url) { (data, response, error) in
+            guard let data = data else {
+                completionHandler([], error)
+                return
+            }
+            let decoder = JSONDecoder()
+            do { let breedsResponse = try decoder.decode(BreedsListResponse.self, from: data)
+                let breeds = breedsResponse.message.keys.map({$0})
+                completionHandler(breeds, nil)
+            } catch {
+                print(error)
+            }
+        }
         task.resume()
     }
 }

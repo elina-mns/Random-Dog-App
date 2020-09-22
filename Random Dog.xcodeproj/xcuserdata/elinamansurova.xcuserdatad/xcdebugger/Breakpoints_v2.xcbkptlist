@@ -14,8 +14,8 @@
             filePath = "Random Dog/Controller/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
             <Locations>
@@ -62,9 +62,9 @@
             filePath = "Random Dog/Model/DogAPI.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
-            landmarkName = "requestRandomImage(completionHandler:)"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "requestRandomImage(breed:completionHandler:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -78,9 +78,9 @@
             filePath = "Random Dog/Model/DogAPI.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
-            landmarkName = "requestRandomImage(completionHandler:)"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "requestRandomImage(breed:completionHandler:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -94,8 +94,8 @@
             filePath = "Random Dog/Model/DogAPI.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
             landmarkName = "requestImageFile(url:completionHandler:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -110,8 +110,8 @@
             filePath = "Random Dog/Model/DogAPI.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
             landmarkName = "requestImageFile(url:completionHandler:)"
             landmarkType = "7">
             <Locations>
@@ -158,9 +158,9 @@
             filePath = "Random Dog/Model/DogAPI.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "requestRandomImage(completionHandler:)"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "requestRandomImage(breed:completionHandler:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -174,8 +174,8 @@
             filePath = "Random Dog/Model/DogAPI.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
             landmarkName = "requestImageFile(url:completionHandler:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -190,42 +190,26 @@
             filePath = "Random Dog/Controller/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
             landmarkName = "reload(_:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "4BC062AE-4A07-41A2-80C7-E191CCC0D841 - cfc2c3356cc5bed9"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Random_Dog.ViewController.reload(Any) -&gt; ()"
-                  moduleName = "Random Dog"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/elinamansurova/Desktop/Projects/Random%20Dog/Random%20Dog/Controller/ViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "20"
-                  endingLineNumber = "20"
-                  offsetFromSymbolStart = "42">
-               </Location>
-               <Location
-                  uuid = "4BC062AE-4A07-41A2-80C7-E191CCC0D841 - efeaba8bceb51809"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Random_Dog.DogImage&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Random_Dog.ViewController.reload(Any) -&gt; ()"
-                  moduleName = "Random Dog"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/elinamansurova/Desktop/Projects/Random%20Dog/Random%20Dog/Controller/ViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "21"
-                  endingLineNumber = "21"
-                  offsetFromSymbolStart = "255">
-               </Location>
-            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E8D28C0B-575E-4EDA-A82F-46786DF55C38"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Random Dog/Controller/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "reload(_:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
