@@ -5,8 +5,6 @@ align="right"/>
 
 This is a simple application allows to discover dogs' breed. There is a list of breeds and each time we get a picture of a particular breed to illustrate.
 
-imageDepiction
-
 ### _Description_
 
 `PickerView` was used for a convenience of a user to have a list of breeds and choose among them.
